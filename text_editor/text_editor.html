@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text editor</title>
+    <link rel="stylesheet" href="./text_editor_style.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="input-body">
+            <h2>Input text</h2>
+            <button class="input-btn" id="bold" onclick="bold()">Bold</button>
+            <button class="input-btn" id="italic" onclick="italic()">Italic</button>
+            <button class="input-btn" id="bold" onclick="underline()">Underline</button>
+            <button class="input-btn" id="bold" onclick="changeCase()">Change case</button>
+            <input type="color" onchange="changeColor(event)">
+            <br>
+            <textarea name="textArea" id="textArea" cols="40" rows="10" oninput="formatText()"></textarea>
+        </div>
+
+        <div class="formatted-text">
+            <h2>Formatted text</h2>
+            <p id="formattedText"></p>
+        </div>
+    </div>
+
+    <script src="./text_editor_js.js"></script>
+
+</body>
+
+</html>
